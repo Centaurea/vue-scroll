@@ -4,7 +4,7 @@ import dom from './domEvent'
 
 const vuescroll = new Object;
 
-vuescroll.install = function (Vue, options) {
+vuescroll.install = function (app, options) {
 
   options = options || {};
   const SCROLL = 'scroll';
@@ -48,17 +48,17 @@ vuescroll.install = function (Vue, options) {
     }
   }
 
-  Vue.directive(SCROLL, {
+  app.directive(SCROLL, {
 
-    bind: function(el, binding, vnode, oldVnode) {
+    beforeMount: function(el, binding, vnode, oldVnode) {
       bindValue(el, binding.value, binding.arg);
     },
 
-    inserted: function(el, binding) {
-        //To do, check whether element is scrollable and give warn message when not
+    mounted: function(el, binding) {
+      //To do, check whether element is scrollable and give warn message when not
     },
 
-    update: function(el, binding) {
+    updated: function(el, binding) {
       if (binding.value === binding.oldValue) {
         return;
       }

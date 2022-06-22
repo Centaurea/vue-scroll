@@ -1,10 +1,10 @@
 {
-  "name": "vue-scroll",
-  "version": "2.1.13",
-  "description": "scroll directive for vuejs 2.0",
-  "main": "dist/vue-scroll.common.js",
-  "module": "dist/vue-scroll.esm.js",
-  "unpkg": "dist/vue-scroll.js",
+  "name": "vue3-scroll",
+  "version": "1.0.0",
+  "description": "vue 3 version of vue-scroll",
+  "main": "dist/vue3-scroll.common.js",
+  "module": "dist/vue3-scroll.esm.js",
+  "unpkg": "dist/vue3-scroll.js",
   "scripts": {
     "dev:dist": "rollup -wm -c build/rollup.dev.config.js",
     "build": "babel-node build/build.js",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:wangpin34/vue-scroll"
+    "url": "git@github.com:Centaurea/vue-scroll"
   },
   "bugs": {
-    "url": "https://github.com/wangpin34/vue-scroll/issues"
+    "url": "https://github.com/Centaurea/vue-scroll/issues"
   },
   "keywords": [
     "vue",
@@ -23,10 +23,10 @@
     "directive",
     "scroll"
   ],
-  "author": "wangpin",
+  "author": "Centaurea",
   "license": "MIT",
   "peerDependencies": {
-    "vue": "^2.1.4"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
@@ -47,7 +47,7 @@
     "zlib": "^1.0.5"
   },
   "browser": {
-    "vue": "vue/dist/vue-scroll.min.js"
+    "vue": "vue/dist/vue3-scroll.min.js"
   },
   "files": [
     "dist/**"

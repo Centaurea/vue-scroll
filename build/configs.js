@@ -16,7 +16,7 @@ const pkg = fs.readFileSync(resolve('package.json'))
 const version = process.env.VERSION || pkg.version
 const banner =
 `/**
-  * vue-scroll v${version}
+  * vue3-scroll v${version}
   * (c) ${new Date().getFullYear()} Wang Pin
   * @license MIT
   */`
@@ -26,21 +26,21 @@ const banner =
 module.exports = [
   // browser dev
   {
-    file: resolve('dist/vue-scroll.js'),
+    file: resolve('dist/vue3-scroll.js'),
     format: 'umd',
     env: 'development'
   },
   {
-    file: resolve('dist/vue-scroll.min.js'),
+    file: resolve('dist/vue3-scroll.min.js'),
     format: 'umd',
     env: 'production'
   },
   {
-    file: resolve('dist/vue-scroll.common.js'),
+    file: resolve('dist/vue3-scroll.common.js'),
     format: 'cjs'
   },
   {
-    file: resolve('dist/vue-scroll.esm.js'),
+    file: resolve('dist/vue3-scroll.esm.js'),
     format: 'es'
   }
 ].map(genConfig)
