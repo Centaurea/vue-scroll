@@ -1,20 +1,20 @@
 # vue-scroll
 
-scroll directive for Vue 3
+scroll directive for Vue 3  
+use (vue-scroll)[https://github.com/wangpin34/vue-scroll] for Vue 2
 
 ## Installation
-### NPM(recommended)
+
 ```
-npm install vue-scroll --save
+npm install @centaurea/vue3-scroll
 ```
 
 ## Get started
 
 ```javascript
-import Vue from 'vue'
-import vuescroll from 'vue-scroll'
+import vuescroll from '@centaurea/vue3-scroll';
 
-Vue.use(vuescroll)
+app.use(vuescroll);
 ```
 
 Directive v-scroll then can be used in any of your Component.
@@ -39,9 +39,9 @@ Method onScroll receives two arguments once scroll event is fired,
 throttle and debounce are supported since v2.1.0, you can enable it as global configurations like:
 
 ```javascript
-Vue.use(vuescroll, {throttle: 600})
+app.use(vuescroll, {throttle: 600})
 //Or
-Vue.use(vuescroll, {debounce: 600})
+app.use(vuescroll, {debounce: 600})
 ```
 
 Override global configurations like
