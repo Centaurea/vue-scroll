@@ -1,7 +1,7 @@
 # vue-scroll
 
 scroll directive for Vue 3  
-use (vue-scroll)[https://github.com/wangpin34/vue-scroll] for Vue 2
+use [vue-scroll](https://github.com/wangpin34/vue-scroll) for Vue 2
 
 ## Installation
 
